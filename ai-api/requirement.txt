@@ -1,1 +1,6 @@
 flask
+pyarrow
+pandas
+numpy
+sentence-transformers
+chromadb
