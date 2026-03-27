@@ -6,7 +6,9 @@ def process_fake_news_pipeline(query, collection, transformer, nli):
 
     # ===== STAGE 1 =====
     s1 = run_stage1_kb_check(collection, transformer, nli, query)
-    return s1
+    if s1["status"] == "success":
+        s=s
+        
 
     # if s1["is_stop"]:
     #     return finalize_stage3(query, s1, stage=1)
