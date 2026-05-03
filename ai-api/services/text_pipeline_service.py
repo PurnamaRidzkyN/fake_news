@@ -21,6 +21,7 @@ def process_fake_news_pipeline(
         s1 = run_stage1_kb_check(collection, transformer, nli, raw_text)
 
         if s1.get("status") == "success":
+            s1["stage"] = "stage_1"
             return s1
 
 
@@ -35,6 +36,7 @@ def process_fake_news_pipeline(
         )
 
         if s2.get("status") == "success":
+            s2["stage"] = "stage_2"
             return s2
 
 
@@ -52,6 +54,7 @@ def process_fake_news_pipeline(
             )
 
             if s2_retry.get("status") == "success":
+                s2_retry["stage"] = "stage_2"
                 return s2_retry
 
         # ===== FINAL FALLBACK =====
