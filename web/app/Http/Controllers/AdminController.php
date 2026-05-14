@@ -17,7 +17,7 @@ class AdminController extends Controller
     {
         /*
         |--------------------------------------------------------------------------
-        | AMBIL DATA PENCARIAN POPULER (Kodingan asli lu)
+        | AMBIL DATA PENCARIAN POPULER
         |--------------------------------------------------------------------------
         */
         $histories = DB::table('history_view')
