@@ -199,7 +199,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 
                 if (isSuccess) {
                     // Handle both response formats
-                    const resultData = data.data || data;
+                    const resultData = data;
                     displayResult(resultData);
                     clearImagePreview();
                 } else {
@@ -298,17 +298,17 @@ document.addEventListener('DOMContentLoaded', function () {
         } 
         // 3. Fallback (cadangan) jika link_counter kosong, pakai struktur 'sources' yang lama
         else if (Array.isArray(sources) && sources.length > 0) {
-            sourcesHtml = sources.map(source => {
-                const safeTitle = escapeHtml(source?.title || 'Sumber referensi');
-                const safeUrl = escapeHtml(source?.url || '#');
-                const hasUrl = Boolean(source?.url) && source.url !== '';
-                const sourceLink = hasUrl
-                    ? `<a href="${safeUrl}" target="_blank" rel="noopener noreferrer">${safeUrl}</a>`
-                    : '-';
+    sourcesHtml = sources.map((url, index) => {
+        const safeUrl = escapeHtml(url);
 
-                return `<li>${safeTitle}. Diakses dari ${sourceLink}</li>`;
-            }).join('');
-        }
+        return `<li>
+            Sumber ${index + 1}:
+            <a href="${safeUrl}" target="_blank" rel="noopener noreferrer" style="word-break: break-all;">
+                ${safeUrl}
+            </a>
+        </li>`;
+    }).join('');
+}P
 
         const safeSummary = escapeHtml(summary || 'Belum ada penjelasan detail untuk hasil pencarian ini.');
 

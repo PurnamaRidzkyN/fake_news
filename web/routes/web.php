@@ -14,6 +14,7 @@ use App\Http\Controllers\GoogleAuthController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\ApiController;
 use App\Http\Controllers\DetectionController;
+use App\Http\Controllers\ImageDetectionController;
 use App\Http\Controllers\PopulerHistoryController;
 use App\Http\Controllers\CsvController;
 
@@ -31,7 +32,7 @@ Route::get('/', function () {
 // Pencarian (public)
 Route::get('/pencarian', [PencarianController::class, 'index'])->name('beranda');
 Route::post('/telusuri', [PencarianController::class, 'telusuri'])->name('telusuri');
-Route::post('/telusuri-gambar', [PencarianController::class, 'telusuriGambar'])->name('telusuri.gambar');
+Route::post('/telusuri-gambar', [ImageDetectionController::class, 'detect'])->name('telusuri.gambar');
 Route::get('/pencarian/populer', [PopulerHistoryController::class, 'index'])->name('pencarian.populer');
 
 // WhatsApp Page
