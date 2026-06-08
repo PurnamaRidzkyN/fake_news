@@ -259,7 +259,7 @@
                 {{-- purnama --}}
                 <div class="team-card">
                     <div class="avatar-wrapper">
-                        <img src="{{ asset('img/landing/pur.jpeg') }}" alt="Foto Purnama Rizky Nugraha">
+                        <img src="{{ asset('img/landing/pur.png') }}" alt="Foto Purnama Rizky Nugraha">
                     </div>
                     <h3>Purnama Rizky Nugraha</h3>
                     <p class="role">Project Manager & AI Engineer</p>
@@ -322,15 +322,15 @@
                 </div>
                 <div class="team-card">
                     <div class="avatar-wrapper">
-                        <img src="{{ asset('img/landing/user-3296_256.png') }}" alt="Foto Firman Dzaki Rahman">
+                        <img src="{{ asset('img/Firman.jpeg') }}" alt="Foto Firman Dzaki Rahman">
                     </div>
                     <h3>Firman Dzaki Rahman</h3>
                     <p class="role">Backend Developer</p>
                     <div class="team-socials">
-                        <a href="#" class="social-icon" title="Website/Portofolio">
+                        <a href="https://github.com/Frmndz" class="social-icon" title="Website/Portofolio">
                             <span class="material-symbols-outlined">language</span>
                         </a>
-                        <a href="mailto:email@kamu.com" class="social-icon" title="Email">
+                        <a href="mailto:firmandzaki6@gmail.com" class="social-icon" title="Email">
                             <span class="material-symbols-outlined">mail</span>
                         </a>
                     </div>
