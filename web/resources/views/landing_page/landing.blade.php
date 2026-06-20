@@ -136,7 +136,7 @@
                         <span class="material-symbols-outlined icon-red">image_search</span>
                     </div>
                     <h3>Keaslian Gambar</h3>
-                    <p>Memeriksa metadata dan jejak manipulasi digital pada foto secara forensik.</p>
+                    <p>Unggah gambar untuk memverifikasi sumber dan konteks aslinya.</p>
                 </div>
 
                 <div class="feature-card">
