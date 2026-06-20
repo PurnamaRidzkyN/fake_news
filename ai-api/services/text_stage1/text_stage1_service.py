@@ -17,7 +17,7 @@ def run_stage1_kb_check(
     nli,
     query,
     top_k=1,
-    gap_threshold=0.30
+    gap_threshold=0.40
 ):
 
     query_embedding = None
