@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // Validate file type
         if (!file.type.startsWith("image/")) {
-            showError("File harus berupa gambar (JPEG, PNG, GIF)");
+            showError("File harus berupa gambar (JPEG, PNG)");
             fileInput.value = ""; // Reset input
             return;
         }
